@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyeridfgookx8"]
+
+[ext_resource type="Script" path="res://scenes/hud/barraVida/barraVida.gd" id="1_gkia1"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_gkia1")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 27.0
+offset_top = 26.0
+offset_right = 67.0
+offset_bottom = 49.0
+text = "Vida:"
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+anchors_preset = -1
+offset_left = 84.0
+offset_top = 25.0
+offset_right = 223.0
+offset_bottom = 52.0
+step = 1.0
+value = 80.0

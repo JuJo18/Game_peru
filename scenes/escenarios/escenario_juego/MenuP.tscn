@@ -1,0 +1,202 @@
+[gd_scene load_steps=23 format=3 uid="uid://bspbeit3vcois"]
+
+[ext_resource type="Texture2D" uid="uid://haadcflhq23r" path="res://assets/Background/Menu.png" id="1_mo611"]
+[ext_resource type="Script" path="res://scenes/escenarios/escenario_juego/MenuP.gd" id="1_pwvqx"]
+[ext_resource type="AudioStream" uid="uid://boyttmqhbw11b" path="res://assets/Music/Music/The Last Mariachi.mp3" id="2_8tw3l"]
+
+[sub_resource type="Animation" id="Animation_7sj0a"]
+resource_name = "Inicio"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Inicio"]
+}
+
+[sub_resource type="Animation" id="Animation_ybmlq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Inicio"]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_amrou"]
+_data = {
+"Inicio": SubResource("Animation_7sj0a"),
+"RESET": SubResource("Animation_ybmlq")
+}
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vpke7"]
+atlas = ExtResource("1_mo611")
+region = Rect2(0, 0, 960, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u7wcj"]
+atlas = ExtResource("1_mo611")
+region = Rect2(960, 0, 960, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_majap"]
+atlas = ExtResource("1_mo611")
+region = Rect2(1920, 0, 960, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tdije"]
+atlas = ExtResource("1_mo611")
+region = Rect2(2880, 0, 960, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yyjtm"]
+atlas = ExtResource("1_mo611")
+region = Rect2(3840, 0, 960, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tn4p6"]
+atlas = ExtResource("1_mo611")
+region = Rect2(4800, 0, 960, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t8ar6"]
+atlas = ExtResource("1_mo611")
+region = Rect2(5760, 0, 960, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8nqqg"]
+atlas = ExtResource("1_mo611")
+region = Rect2(6720, 0, 960, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_23m3t"]
+atlas = ExtResource("1_mo611")
+region = Rect2(7680, 0, 960, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xdavp"]
+atlas = ExtResource("1_mo611")
+region = Rect2(8640, 0, 960, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2af3r"]
+atlas = ExtResource("1_mo611")
+region = Rect2(9600, 0, 960, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7162x"]
+atlas = ExtResource("1_mo611")
+region = Rect2(10560, 0, 960, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fdf18"]
+atlas = ExtResource("1_mo611")
+region = Rect2(11520, 0, 960, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_at01r"]
+atlas = ExtResource("1_mo611")
+region = Rect2(12480, 0, 960, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b4uk4"]
+atlas = ExtResource("1_mo611")
+region = Rect2(13440, 0, 960, 720)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oubb8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vpke7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u7wcj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_majap")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tdije")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yyjtm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tn4p6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t8ar6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8nqqg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_23m3t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xdavp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2af3r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7162x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fdf18")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_at01r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b4uk4")
+}],
+"loop": true,
+"name": &"Inicio",
+"speed": 10.0
+}]
+
+[node name="Node2D" type="Node2D"]
+process_mode = 3
+script = ExtResource("1_pwvqx")
+
+[node name="Soundtrack" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_8tw3l")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_amrou")
+}
+
+[node name="Label" type="Label" parent="AnimationPlayer"]
+offset_left = 178.0
+offset_top = 151.0
+offset_right = 1021.0
+offset_bottom = 275.0
+theme_override_font_sizes/font_size = 90
+text = "Five Night's At Perú"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(574, 349)
+scale = Vector2(1.22083, 1.10556)
+sprite_frames = SubResource("SpriteFrames_oubb8")
+animation = &"Inicio"
+autoplay = "Inicio"
+frame_progress = 0.48478
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AnimatedSprite2D"]
+offset_left = -182.213
+offset_top = 28.0402
+offset_right = 157.787
+offset_bottom = 142.04
+
+[node name="Jugar" type="Button" parent="AnimatedSprite2D/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 34
+text = "Jugar"
+
+[node name="Salir" type="Button" parent="AnimatedSprite2D/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 34
+text = "Salir"
+
+[connection signal="pressed" from="AnimatedSprite2D/VBoxContainer/Jugar" to="." method="_on_jugar_pressed"]
+[connection signal="pressed" from="AnimatedSprite2D/VBoxContainer/Salir" to="." method="_on_salir_pressed"]
